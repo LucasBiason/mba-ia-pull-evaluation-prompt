@@ -1,0 +1,29 @@
+bug_to_user_story_v1:
+  description: Prompt de baixa qualidade puxado do LangSmith Hub para otimizacao
+  system_prompt: 'Você é um assistente que ajuda a transformar relatos de bugs de
+    usuários em tarefas para desenvolvedores.
+
+
+    Analise o relato de bug abaixo e crie uma user story a partir dele.
+
+
+    Relato de Bug:
+
+    ---
+
+    {bug_report}
+
+    ---
+
+
+    User Story gerada:
+
+    '
+  user_prompt: '{bug_report}'
+  version: v1
+  source: leonanluppi/bug_to_user_story_v1
+  tags:
+  - bug-analysis
+  - user-story
+  - product-management
+  hub_commit: 2950c33dbd7ffaed2e440b50adfd7769d183f90faf0bae5aa4864354f88e4073
